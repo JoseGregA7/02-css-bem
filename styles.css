@@ -1,0 +1,294 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 20px;
+    background-color: #f4f4f4;
+}
+
+.header {
+    background-color: #b5f5d8;
+    background: linear-gradient(to right, #3c4d3d, #53b87e);
+    color: white;
+    padding: 10px 15px;
+    display: flex;
+    align-items: center; 
+}
+
+.header__title {
+    margin: 0;
+    font-size: 2.2em; 
+    font-weight:600; 
+    flex-grow: 1; 
+}
+
+.nav {
+    margin-top: 10px;
+}
+
+.nav__list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.nav__item {
+    display: inline;
+    margin-right: 20px;
+}
+
+.nav__link {
+    color: white;
+    text-decoration: none;
+    font-weight: 50;
+    font-size: 20px;
+}
+
+.nav__link:hover {
+    border-bottom: 2px solid white; 
+}
+
+.banner {
+    background-image: url('musica.webp'); 
+    background-repeat: repeat; 
+    height: 220px; 
+    width: 100%;
+    display: flex;
+    align-items: center; 
+    justify-content: center; 
+    color: white;
+    text-align: center;
+    position: relative;
+    margin-top: 10px;
+}
+
+.banner__content {
+    position: absolute;
+    width: inherit;
+    top: 50%;
+    left: 50%;
+    height: 220px;
+    transform: translate(-50%, -50%);
+    text-shadow: 4px 4px 4px rgba(59, 147, 70, 0.8);
+    background: linear-gradient(to right, #b2c1b3, #1abc60,  #b2c1b3); 
+    opacity: 0.8;
+}
+
+.banner__title {
+    font-size: 2em;
+    font-weight: bold;
+    z-index: 10;
+}
+
+.banner__subtitle {
+    font-size: 1.4em;
+    margin: 10px 0;
+}
+
+.banner__button {
+    margin-top: 10px
+}
+
+.banner__link {
+    color: white; 
+    background-color: #d1ded2; 
+    border: 2px solid #103b12;
+    padding: 10px 10px;
+    border-radius: 5px; 
+    text-decoration: none; 
+    font-weight: bold; /
+}
+
+.banner__link:hover {
+    background-color: #a8baa5f3; 
+    border-bottom: 3px solid #103b12
+}
+
+.main {
+    margin-top: 10px;
+}
+
+.section__wrapper {
+    margin-bottom: 10px;
+    padding: 15px;
+    background: linear-gradient(to right, #53b87e, #3c4d3d);
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-bottom: 50px;
+}
+
+.section__title {
+    margin: 0 0 10px;
+    font-size: 1.5em; 
+    font-weight: bold; 
+}
+
+.section__content {
+    margin: 0;
+}
+
+.section__image {
+    width: 100%;
+    max-width: 400px; 
+    border-radius: 5px;
+    color: #388e3c;
+}
+
+.section__main,
+.section__features,
+.section__tutorials,
+.section__history,
+.section__recommendations {
+    display: flex; 
+    flex-wrap: wrap; 
+    background-color: white; 
+    border-radius: 10px; 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+    padding: 15px; 
+    margin: 5px ; 
+}
+
+.section__features {
+    display: flex;
+    flex-direction: column;
+
+} 
+
+.section__history {
+    background: linear-gradient(to right, #b2c1b3, #1abc60,  #b2c1b3); 
+    border-radius: 8px;
+}
+
+.features__list {
+    border-bottom: solid 2px green;
+    border-left: solid 2px green;
+    background: linear-gradient(to right, #b2c1b3, #1abc60,  #b2c1b3); 
+    border-radius: 8px;
+}
+
+.section__recommendations {
+    display: flex;
+    align-items: center;
+    justify-content:space-evenly;
+    background: linear-gradient(to right, #d9ecdb, #c9eed9,  #b2c1b3); 
+    border-radius: 8px;
+}
+
+.section__features_items {
+    margin-bottom: 8px;
+    list-style: none;
+}
+
+.section__contacto {
+    padding: 15px;
+    background: linear-gradient(to right, #53b87e, #3c4d3d);
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    display: grid;
+    margin-bottom: 50px;
+    margin-top: 30px;
+    color: white;
+}
+
+h3 {
+    font-weight: bold;
+}
+
+.aside {
+    background: linear-gradient(to right, #53b87e, #3c4d3d); /* Gradiente verde */
+    transition: transform 0.4s ease, background-color 0.4s ease, color 0.4s ease, font-size 0.4s ease; /* Añade una transición suave */
+    padding: 25px;
+    border-radius: 0 10px 0 0; /* Bordes redondeados en las esquinas superior derecha e inferior izquierda */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra para profundidad */
+    margin: 10px 5px; /* Espaciado entre asides */
+    color: white; /* Color del texto */
+}
+
+.aside:hover {
+    transform: scale(1.05); /* Aumenta el tamaño del aside al hacer hover */
+    background: linear-gradient(to bottom right, #909b90, #388e3c); /* Cambia el color de fondo */
+    color: white;; /* Asegúrate de que el texto siga siendo visible */
+    font-size: 1.1em; /* Aumenta el tamaño de la letra */
+    border-radius: 0 30px 0 0;
+}
+
+.aside__title {
+    margin: 0 0 10px;
+    font-weight: bold;
+    padding-bottom: 4px;
+    border-bottom: 3px solid white;
+}
+
+.aside__list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.aside__item {
+    margin: 8px 0;
+}
+
+.aside-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(550px, 1fr)); 
+    gap: 15px; 
+}
+
+.form {
+    margin-top: 20px;
+}
+
+.form__fieldset {
+    border: none;
+    display: flex;
+}
+
+.form__label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+.form__input,
+.form__textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin: 4px;
+}
+
+.form__button {
+    background-color: #b1dab3a9;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.form__button:hover {
+    background-color: #45a049;
+}
+
+.footer {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.footer__text {
+    font-size: 0.9em;
+}
+
+@media(width <= 770px){
+    .section__wrapper{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .header__title {
+        margin: 0;
+        font-size: 1.8em; 
+        font-weight:400; 
+        flex-grow: 1; 
+    }
+}
